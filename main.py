@@ -263,7 +263,6 @@ def main():
         if val_loss < best_val_loss:
             best_val_loss = val_loss
             torch.save(model.state_dict(), "unet_best.pth")
-            torch.save(model.state_dict(), "/output/unet_best.pth")
             print("Model checkpoint saved as unet_best.pth")
 
 if __name__ == "__main__":
